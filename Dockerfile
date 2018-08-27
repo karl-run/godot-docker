@@ -10,8 +10,8 @@ RUN apt-get update \
     && wget \
 "http://download.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-${GODOT_VARIANT}_linux_headless.64.zip" \
 "http://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-${GODOT_VARIANT}_export_templates.tpz" \
-    && unzip Godot_v*_linux_server.64.zip \
-    && mv Godot_v*_linux_server.64 /bin/godot \
+    && unzip Godot_v*_linux_headless.64.zip \
+    && mv Godot_v*_linux_headless.64 /bin/godot \
     && mkdir ~/.godot \
     && unzip -d ~/.godot Godot_v*_export_templates.tpz \
     && rm -f *.zip *.tpz \
